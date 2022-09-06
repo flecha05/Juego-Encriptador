@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Codificador</title>
+    </head>
+    <body>
+        <header>
+            <img src="IMG/LOOGO.jpg" class="logo">
+        </header>
+        <main>
+            <section class="Encriptador">
+                <form>
+                    <textarea class="input-texto" cols="30" rows="10" placeholder="Escriba su texto"></textarea>
+                    <div class="condiciones">
+                        <label class="info">&#33 Solo letras minusculas y sin acentos</label>
+                    </div>
+                    <div class="btn">
+                        <button class="encriptar"  onclick="btnE()">Encriptar</button>
+                        <button class="desencriptar"  onclick="btnD()">Desencriptar</button>
+                    </div>
+                </form>
+            </section>
+            <section class="mensaje">
+                <div id="div-result">
+                    <img src="IMG/CCOD2.jpg" alt="candado">
+                </div>
+                <div id="div-sresults">
+                    <textarea  class="msj" cols="30" rows="10" ></textarea>
+                    <button  class="copiar" onclick="copy()">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    <footer>
+        <div>
+            <p class="copyright">&copy Copyright FF-Programa ONE.</p>
+        </div>
+    </footer>
+</html>
